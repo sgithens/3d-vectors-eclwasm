@@ -1,0 +1,25 @@
+Simple example to show the below error from 3d-vectors when quickloading.
+Use ./make.sh in your ECL/WASM/Emscripten environment and load hello.html when done.  After clicking "Cancel" several times to get past the alert dialog, you should get the error below.
+
+  Load 1 ASDF system:
+    3d-vectors
+; Loading "3d-vectors"
+[package 3d-vectors]..............................
+..................................................
+..................................................
+.....
+
+Condition of type: SIMPLE-PROGRAM-ERROR
+In form
+(SETF (3D-VECTORS::%VW4 #:G51436) (LOCALLY (DECLARE (OPTIMIZE (SPEED 1))) (3D-VECTORS::ENSURE-FLOAT #:G51437)))
+Argument to bytecode is too large
+Available restarts:
+
+1. (RETRY) Retry compiling #<cl-source-file "3d-vectors" "ops">.
+2. (ACCEPT) Continue, treating compiling #<cl-source-file "3d-vectors" "ops"> as having been successful.
+3. (RETRY) Retry ASDF operation.
+4. (CLEAR-CONFIGURATION-AND-RETRY) Retry ASDF operation after resetting the configuration.
+5. (ABORT) Give up on "3d-vectors"
+6. (REGISTER-LOCAL-PROJECTS) Register local projects and try again.
+
+

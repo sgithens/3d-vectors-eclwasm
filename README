@@ -1,6 +1,10 @@
 Simple example to show the below error from 3d-vectors when quickloading.
 Use ./make.sh in your ECL/WASM/Emscripten environment and load hello.html when done.  After clicking "Cancel" several times to get past the alert dialog, you should get the error below.
 
+The main bits should just be 
+  - hello.c and 
+  - boxerdata/quicklisp/dists/quicklisp/software/3d-vectors-20231021-git/
+
   Load 1 ASDF system:
     3d-vectors
 ; Loading "3d-vectors"
